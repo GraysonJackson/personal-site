@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Design & Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-icon" id="toggleIcon">☀</span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#hero" class="nav-logo">✦ Portfolio</a>
+        <div class="nav-links">
+            <a href="#work" class="nav-link">Work</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#process" class="nav-link">Process</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="chrome-text">Design</span> &
+                <span class="chrome-text">Development</span>
+            </h1>
+            <p class="hero-subtitle">I build things that look good and work well.</p>
+            <div class="hero-meta">
+                <span>Available for work</span>
+                <span class="separator">·</span>
+                <span>Based in London</span>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Project Grid Section -->
+    <section class="section" id="work">
+        <div class="section-header">
+            <h2 class="section-title">Selected Work</h2>
+            <p class="section-desc">Projects I've designed and built.</p>
+        </div>
+        <div class="project-grid">
+            <div class="project-card" data-preview="artisan">
+                <div class="project-number">01</div>
+                <h3 class="project-title">Artisan Storefront</h3>
+                <p class="project-desc">E-commerce concept with warm minimalism and cart physics.</p>
+                <div class="project-tags">
+                    <span>Next.js</span>
+                    <span>Tailwind</span>
+                    <span>Framer Motion</span>
+                </div>
+                <div class="project-preview" id="preview-artisan">
+                    <div class="preview-placeholder">Artisan Storefront Preview</div>
+                </div>
+            </div>
+            <div class="project-card" data-preview="ambient">
+                <div class="project-number">02</div>
+                <h3 class="project-title">Generative Ambient Player</h3>
+                <p class="project-desc">Client-side audio synthesis with retro-futurist UI.</p>
+                <div class="project-tags">
+                    <span>React</span>
+                    <span>Tone.js</span>
+                    <span>Web Audio</span>
+                </div>
+                <div class="project-preview" id="preview-ambient">
+                    <div class="preview-placeholder">Ambient Player Preview</div>
+                </div>
+            </div>
+            <div class="project-card" data-preview="editorial">
+                <div class="project-number">03</div>
+                <h3 class="project-title">Long-Form Editorial</h3>
+                <p class="project-desc">Typography-first magazine layout with reading progress tracking.</p>
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="project-preview" id="preview-editorial">
+                    <div class="preview-placeholder">Editorial Preview</div>
+                </div>
+            </div>
+            <div class="project-card" data-preview="finance">
+                <div class="project-number">04</div>
+                <h3 class="project-title">Spending Flow</h3>
+                <p class="project-desc">Data visualization dashboard using D3.js for financial flows.</p>
+                <div class="project-tags">
+                    <span>D3.js</span>
+                    <span>SVG</span>
+                    <span>CSV</span>
+                </div>
+                <div class="project-preview" id="preview-finance">
+                    <div class="preview-placeholder">Finance Dashboard Preview</div>
+                </div>
+            </div>
+            <div class="project-card" data-preview="cause">
+                <div class="project-number">05</div>
+                <h3 class="project-title">Cause Awareness</h3>
+                <p class="project-desc">Kinetic typography and scroll-driven narrative for non-profits.</p>
+                <div class="project-tags">
+                    <span>Next.js</span>
+                    <span>GSAP</span>
+                    <span>ScrollTrigger</span>
+                </div>
+                <div class="project-preview" id="preview-cause">
+                    <div class="preview-placeholder">Cause Awareness Preview</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-about" id="about">
+        <div class="section-header">
+            <h2 class="section-title">About</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a designer who codes and a developer who cares about design. My work sits at the intersection — I think in systems, build in code, and obsess over details that most people never notice.</p>
+                <p>After spending time building infrastructure and data pipelines, I shifted focus toward design-forward web projects. Each piece in this portfolio targets a specific design problem: e-commerce, editorial, data visualization, motion design, and personal expression.</p>
+                <p>I care about restraint, intention, and craft. Every interaction should feel earned, every layout should breathe, and every color choice should have a reason behind it.</p>
+            </div>
+            <div class="about-details">
+                <div class="detail-block">
+                    <h4>Tools</h4>
+                    <p>Figma, VS Code, Git, Next.js, React, D3.js, GSAP, Astro, Tailwind</p>
+                </div>
+                <div class="detail-block">
+                    <h4>Focus</h4>
+                    <p>UI/UX Design, Frontend Development, Creative Coding, Design Systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section section-process" id="process">
+        <div class="section-header">
+            <h2 class="section-title">Process</h2>
+            <p class="section-desc">How I approach design problems.</p>
+        </div>
+        <div class="process-steps">
+            <div class="process-step">
+                <span class="step-number">01</span>
+                <h4>Understand</h4>
+                <p>Every project starts with a constraint. What's the design problem? What am I trying to prove? What should a reviewer take away?</p>
+            </div>
+            <div class="process-step">
+                <span class="step-number">02</span>
+                <h4>Choose</h4>
+                <p>Stack, visual direction, and interaction model get decided early. I pick tools that serve the design, not the other way around.</p>
+            </div>
+            <div class="process-step">
+                <span class="step-number">03</span>
+                <h4>Build</h4>
+                <p>Iterate quickly. I prototype interactions before polishing visuals. If it doesn't feel right in wireframe form, high fidelity won't save it.</p>
+            </div>
+            <div class="process-step">
+                <span class="step-number">04</span>
+                <h4>Refine</h4>
+                <p>The difference between good and great is in the last 10% — transition timing, hover states, empty states, edge cases. I ship when I'd be proud to show it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-contact" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-desc">Have a project in mind or want to chat?</p>
+        </div>
+        <div class="contact-links">
+            <a href="mailto:hello@example.com" class="contact-link" data-cursor="link">
+                <span class="link-label">Email</span>
+                <span class="link-value">hello@example.com</span>
+                <span class="link-arrow">→</span>
+            </a>
+            <a href="https://github.com" class="contact-link" data-cursor="link" target="_blank" rel="noopener">
+                <span class="link-label">GitHub</span>
+                <span class="link-value">github.com/yourname</span>
+                <span class="link-arrow">→</span>
+            </a>
+            <a href="https://linkedin.com" class="contact-link" data-cursor="link" target="_blank" rel="noopener">
+                <span class="link-label">LinkedIn</span>
+                <span class="link-value">linkedin.com/in/yourname</span>
+                <span class="link-arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed and built by hand. © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
