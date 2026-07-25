@@ -1,214 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio — Design & Development</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grayson Jackson - Design & Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Custom Cursor -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-trail" id="cursorTrail"></div>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
 
-    <!-- Theme Toggle -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <span class="toggle-icon" id="toggleIcon">☀</span>
-    </button>
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <span class="toggle-icon" id="toggleIcon">☀</span>
+  </button>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <a href="#hero" class="nav-logo">✦ Portfolio</a>
-        <div class="nav-links">
-            <a href="#work" class="nav-link">Work</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#process" class="nav-link">Process</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </div>
-    </nav>
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="#hero" class="nav-logo">✦ Grayson Jackson</a>
+    <div class="nav-links">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="chrome-text">Design</span> &
-                <span class="chrome-text">Development</span>
-            </h1>
-            <p class="hero-subtitle">I build things that look good and work well.</p>
-            <div class="hero-meta">
-                <span>Available for work</span>
-                <span class="separator">·</span>
-                <span>Based in London</span>
-            </div>
-        </div>
-        <div class="hero-scroll-indicator">
-            <span>Scroll to explore</span>
-            <div class="scroll-line"></div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="chrome-text">Systems</span> & <span class="chrome-text">Design</span>
+      </h1>
+      <p class="hero-subtitle">Building AI research platforms by day, crafting design-forward web experiences by night.</p>
+      <div class="hero-meta">
+        <span>Available for work</span>
+        <span class="separator">·</span>
+        <span>Benton, AR</span>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-    <!-- Project Grid Section -->
-    <section class="section" id="work">
-        <div class="section-header">
-            <h2 class="section-title">Selected Work</h2>
-            <p class="section-desc">Projects I've designed and built.</p>
+  <!-- Project Grid Section -->
+  <section class="section" id="work">
+    <div class="section-header">
+      <h2 class="section-title">Selected Work</h2>
+      <p class="section-desc">Design-forward web projects, each targeting a specific design problem.</p>
+    </div>
+    <div class="project-grid">
+      <div class="project-card" data-preview="artisan">
+        <div class="project-number">01</div>
+        <h3 class="project-title">Atelier Handmade</h3>
+        <p class="project-desc">E-commerce storefront with warm brutalism and cart physics.</p>
+        <div class="project-tags">
+          <span>Next.js</span>
+          <span>Tailwind</span>
+          <span>Framer Motion</span>
         </div>
-        <div class="project-grid">
-            <div class="project-card" data-preview="artisan">
-                <div class="project-number">01</div>
-                <h3 class="project-title">Artisan Storefront</h3>
-                <p class="project-desc">E-commerce concept with warm minimalism and cart physics.</p>
-                <div class="project-tags">
-                    <span>Next.js</span>
-                    <span>Tailwind</span>
-                    <span>Framer Motion</span>
-                </div>
-                <div class="project-preview" id="preview-artisan">
-                    <div class="preview-placeholder">Artisan Storefront Preview</div>
-                </div>
-            </div>
-            <div class="project-card" data-preview="ambient">
-                <div class="project-number">02</div>
-                <h3 class="project-title">Generative Ambient Player</h3>
-                <p class="project-desc">Client-side audio synthesis with retro-futurist UI.</p>
-                <div class="project-tags">
-                    <span>React</span>
-                    <span>Tone.js</span>
-                    <span>Web Audio</span>
-                </div>
-                <div class="project-preview" id="preview-ambient">
-                    <div class="preview-placeholder">Ambient Player Preview</div>
-                </div>
-            </div>
-            <div class="project-card" data-preview="editorial">
-                <div class="project-number">03</div>
-                <h3 class="project-title">Long-Form Editorial</h3>
-                <p class="project-desc">Typography-first magazine layout with reading progress tracking.</p>
-                <div class="project-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <div class="project-preview" id="preview-editorial">
-                    <div class="preview-placeholder">Editorial Preview</div>
-                </div>
-            </div>
-            <div class="project-card" data-preview="finance">
-                <div class="project-number">04</div>
-                <h3 class="project-title">Spending Flow</h3>
-                <p class="project-desc">Data visualization dashboard using D3.js for financial flows.</p>
-                <div class="project-tags">
-                    <span>D3.js</span>
-                    <span>SVG</span>
-                    <span>CSV</span>
-                </div>
-                <div class="project-preview" id="preview-finance">
-                    <div class="preview-placeholder">Finance Dashboard Preview</div>
-                </div>
-            </div>
-            <div class="project-card" data-preview="cause">
-                <div class="project-number">05</div>
-                <h3 class="project-title">Cause Awareness</h3>
-                <p class="project-desc">Kinetic typography and scroll-driven narrative for non-profits.</p>
-                <div class="project-tags">
-                    <span>Next.js</span>
-                    <span>GSAP</span>
-                    <span>ScrollTrigger</span>
-                </div>
-                <div class="project-preview" id="preview-cause">
-                    <div class="preview-placeholder">Cause Awareness Preview</div>
-                </div>
-            </div>
+        <a href="https://graysonjackson.github.io/artisan-storefront/" class="project-link" target="_blank" rel="noopener">View Live →</a>
+      </div>
+      <div class="project-card" data-preview="ambient">
+        <div class="project-number">02</div>
+        <h3 class="project-title">Generative Ambient Player</h3>
+        <p class="project-desc">Client-side audio synthesis with retro-futurist UI.</p>
+        <div class="project-tags">
+          <span>React</span>
+          <span>Tone.js</span>
+          <span>Web Audio</span>
         </div>
-    </section>
+        <a href="https://graysonjackson.github.io/generative-ambient-player/" class="project-link" target="_blank" rel="noopener">View Live →</a>
+      </div>
+      <div class="project-card" data-preview="editorial">
+        <div class="project-number">03</div>
+        <h3 class="project-title">Long-Form Editorial</h3>
+        <p class="project-desc">Typography-first magazine layout with reading progress tracking.</p>
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <a href="https://graysonjackson.github.io/long-form-editorial/" class="project-link" target="_blank" rel="noopener">View Live →</a>
+      </div>
+      <div class="project-card" data-preview="finance">
+        <div class="project-number">04</div>
+        <h3 class="project-title">Spending Flow</h3>
+        <p class="project-desc">Data visualization dashboard using D3.js for financial flows.</p>
+        <div class="project-tags">
+          <span>D3.js</span>
+          <span>SVG</span>
+          <span>CSV</span>
+        </div>
+        <a href="https://graysonjackson.github.io/personal-finance-visualizer/" class="project-link" target="_blank" rel="noopener">View Live →</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="section section-about" id="about">
-        <div class="section-header">
-            <h2 class="section-title">About</h2>
+  <!-- Other Work Section -->
+  <section class="section" id="other-work">
+    <div class="section-header">
+      <h2 class="section-title">Other Work</h2>
+      <p class="section-desc">Additional projects on GitHub.</p>
+    </div>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-number">A</div>
+        <h3 class="project-title">Research Intelligence Platform</h3>
+        <p class="project-desc">Fully offline AI research platform built during internship at Nanobox. RAG-based system using ChromaDB and local language models.</p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>LangChain</span>
+          <span>ChromaDB</span>
         </div>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I'm a designer who codes and a developer who cares about design. My work sits at the intersection — I think in systems, build in code, and obsess over details that most people never notice.</p>
-                <p>After spending time building infrastructure and data pipelines, I shifted focus toward design-forward web projects. Each piece in this portfolio targets a specific design problem: e-commerce, editorial, data visualization, motion design, and personal expression.</p>
-                <p>I care about restraint, intention, and craft. Every interaction should feel earned, every layout should breathe, and every color choice should have a reason behind it.</p>
-            </div>
-            <div class="about-details">
-                <div class="detail-block">
-                    <h4>Tools</h4>
-                    <p>Figma, VS Code, Git, Next.js, React, D3.js, GSAP, Astro, Tailwind</p>
-                </div>
-                <div class="detail-block">
-                    <h4>Focus</h4>
-                    <p>UI/UX Design, Frontend Development, Creative Coding, Design Systems</p>
-                </div>
-            </div>
+        <a href="https://github.com/GraysonJackson/Research-Intelligence-Platform" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+      <div class="project-card">
+        <div class="project-number">B</div>
+        <h3 class="project-title">LLM Energy Analysis</h3>
+        <p class="project-desc">Analysis of energy consumption patterns in large language model inference.</p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Data Analysis</span>
         </div>
-    </section>
+        <a href="https://github.com/GraysonJackson/llm-energy-analysis" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+      <div class="project-card">
+        <div class="project-number">C</div>
+        <h3 class="project-title">Art Tinder</h3>
+        <p class="project-desc">Swipe-based art discovery application.</p>
+        <div class="project-tags">
+          <span>JavaScript</span>
+          <span>API</span>
+        </div>
+        <a href="https://github.com/GraysonJackson/art-tinder" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+      <div class="project-card">
+        <div class="project-number">D</div>
+        <h3 class="project-title">UALR DizzyCrypt</h3>
+        <p class="project-desc">Cybersecurity challenge tool built for UALR's cybersecurity club.</p>
+        <div class="project-tags">
+          <span>Java</span>
+          <span>Cryptography</span>
+        </div>
+        <a href="https://github.com/GraysonJackson/UALR-DizzyCrypt" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+      <div class="project-card">
+        <div class="project-number">E</div>
+        <h3 class="project-title">Student Fitness App</h3>
+        <p class="project-desc">Fitness tracking application for university students.</p>
+        <div class="project-tags">
+          <span>JavaScript</span>
+          <span>React</span>
+        </div>
+        <a href="https://github.com/modernswdev/team2-student-fitness-app" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Process Section -->
-    <section class="section section-process" id="process">
-        <div class="section-header">
-            <h2 class="section-title">Process</h2>
-            <p class="section-desc">How I approach design problems.</p>
+  <!-- About Section -->
+  <section class="section section-about" id="about">
+    <div class="section-header">
+      <h2 class="section-title">About</h2>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>I'm a systems architect and web designer based in Benton, Arkansas. I recently completed a role at Nanobox in Dublin, where I built a fully offline AI research intelligence platform from the ground up. The system processed peer-reviewed scientific papers, stored them in a vector database, and provided a conversational chatbot for synthesis and citation. Every piece of data stayed inside the organisation.</p>
+        <p>Before that, I worked with the Arkansas Department of Health on data validation and client onboarding across hospitals and clinics statewide. I also taught cybersecurity to high school students as a GenCyber guest lecturer at UALR.</p>
+        <p>On the design side, I build projects that explore specific problems: e-commerce with warm brutalism, typography-first editorial layouts, data visualization with D3, and generative audio. I care about restraint, intention, and craft. Every interaction should feel earned, every layout should breathe.</p>
+      </div>
+      <div class="about-details">
+        <div class="detail-block">
+          <h4>Education</h4>
+          <p>University of Arkansas at Little Rock<br>Computer Science, 2024-Present<br>Donaghey Scholar</p>
         </div>
-        <div class="process-steps">
-            <div class="process-step">
-                <span class="step-number">01</span>
-                <h4>Understand</h4>
-                <p>Every project starts with a constraint. What's the design problem? What am I trying to prove? What should a reviewer take away?</p>
-            </div>
-            <div class="process-step">
-                <span class="step-number">02</span>
-                <h4>Choose</h4>
-                <p>Stack, visual direction, and interaction model get decided early. I pick tools that serve the design, not the other way around.</p>
-            </div>
-            <div class="process-step">
-                <span class="step-number">03</span>
-                <h4>Build</h4>
-                <p>Iterate quickly. I prototype interactions before polishing visuals. If it doesn't feel right in wireframe form, high fidelity won't save it.</p>
-            </div>
-            <div class="process-step">
-                <span class="step-number">04</span>
-                <h4>Refine</h4>
-                <p>The difference between good and great is in the last 10% — transition timing, hover states, empty states, edge cases. I ship when I'd be proud to show it.</p>
-            </div>
+        <div class="detail-block">
+          <h4>Skills</h4>
+          <p>Java, Python, C++, Kotlin, JavaScript<br>LangChain, ChromaDB, D3.js, React<br>Next.js, Tailwind, Framer Motion</p>
         </div>
-    </section>
+        <div class="detail-block">
+          <h4>Awards</h4>
+          <p>JOLT Cybersecurity Competition<br>2nd Place (2025, 2026)</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section class="section section-contact" id="contact">
-        <div class="section-header">
-            <h2 class="section-title">Get in Touch</h2>
-            <p class="section-desc">Have a project in mind or want to chat?</p>
-        </div>
-        <div class="contact-links">
-            <a href="mailto:hello@example.com" class="contact-link" data-cursor="link">
-                <span class="link-label">Email</span>
-                <span class="link-value">hello@example.com</span>
-                <span class="link-arrow">→</span>
-            </a>
-            <a href="https://github.com" class="contact-link" data-cursor="link" target="_blank" rel="noopener">
-                <span class="link-label">GitHub</span>
-                <span class="link-value">github.com/yourname</span>
-                <span class="link-arrow">→</span>
-            </a>
-            <a href="https://linkedin.com" class="contact-link" data-cursor="link" target="_blank" rel="noopener">
-                <span class="link-label">LinkedIn</span>
-                <span class="link-value">linkedin.com/in/yourname</span>
-                <span class="link-arrow">→</span>
-            </a>
-        </div>
-    </section>
+  <!-- Experience Section -->
+  <section class="section section-process" id="experience">
+    <div class="section-header">
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <span class="step-number">01</span>
+        <h4>Systems Architect - Nanobox</h4>
+        <p>Dublin, Ireland, May 2026-Present. Architected and deployed a fully offline AI research platform. Built the RAG pipeline using ChromaDB, designed automated literature monitoring, and developed a four-layer filtering algorithm for data integrity and citation accuracy.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-number">02</span>
+        <h4>Project Analyst - AR Dept. of Health</h4>
+        <p>Little Rock, AR, May 2025-Present. Worked in waterfall development, validating data and onboarding clients across hospitals and clinics statewide. Identified issues in data messages and collaborated with development teams.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-number">03</span>
+        <h4>Guest Lecturer - UALR GenCyber</h4>
+        <p>Little Rock, AR, July 2025. Created lesson plans and content for high school students on cybersecurity topics. Facilitated capture-the-flag competitions using taught material.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>Designed and built by hand. © 2026</p>
-    </footer>
+  <!-- Contact Section -->
+  <section class="section section-contact" id="contact">
+    <div class="section-header">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-desc">Have a project in mind or want to chat?</p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:grayson.m.jackson@gmail.com" class="contact-link" data-cursor="link">
+        <span class="link-label">Email</span>
+        <span class="link-value">grayson.m.jackson@gmail.com</span>
+        <span class="link-arrow">→</span>
+      </a>
+      <a href="https://github.com/GraysonJackson" class="contact-link" data-cursor="link" target="_blank" rel="noopener">
+        <span class="link-label">GitHub</span>
+        <span class="link-value">github.com/GraysonJackson</span>
+        <span class="link-arrow">→</span>
+      </a>
+      <a href="https://linkedin.com/in/grayson-jackson-667578248" class="contact-link" data-cursor="link" target="_blank" rel="noopener">
+        <span class="link-label">LinkedIn</span>
+        <span class="link-value">linkedin.com/in/grayson-jackson</span>
+        <span class="link-arrow">→</span>
+      </a>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed and built by hand. © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
